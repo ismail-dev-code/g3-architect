@@ -1,62 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    font-family: "Work Sans", sans-serif;
-
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
 }
-header{
-    background-color: rgba(255, 144, 14, 0.10);
-    padding: 40px 140px;
-    
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 40px 140px;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 nav ul {
-   display: flex;
+  display: flex;
   gap: 30px;
   list-style: none;
 }
-nav ul a{
-    text-decoration: none;
-    color: #424242;
-    font-weight: 500;
-    font-size: 18px;
+nav ul a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
 }
-header h3{
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0px;
+header h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
 }
 /* banner style */
-.banner-content{
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+.banner {
+  margin-top: 94px;
 }
-.banner-title{
-    font-size: 4rem;
-    font-weight: 700;
-    color: #131313;
-   
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
-.banner-description{
-    color: #727272;
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
 }
-.btn-primary{
-    border-radius: 8px;
-    color: #fff;
-    background: #ff900e;
-    padding: 20px 25px;
-    border: none;
-    margin-bottom: 20px;
-    font-size: 20px;
+.banner-description {
+  color: #727272;
+}
+.btn-primary {
+  border-radius: 8px;
+  color: #fff;
+  background: #ff900e;
+  padding: 20px 25px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-   
-.img{
+.img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* responsive media queries */
+/* mobile device */
+
+/* features style  */
+.features-container {
+  display: flex;
+  margin-top: 85px;
+  padding: 0px 20px;
+}
+.features-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+#li-features {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.features-content {
+  display: flex;
+  align-items: center;
+}
+.features-content h1 {
+  font-size: 45px;
+  font-weight: bold;
+  width: 468px;
+  margin-bottom: 24px;
+}
+
+/* experience section style  */
+.experience-container{
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding: 0px 80px;
+}
+.experience-content h1{
+    font-size: 46px;
+    font-weight: bold;
+    border-left: 5px solid #ff900e;
+    width: 468px;
+    padding-left: 21px;
+}
+.experience-content p{
+    margin-top: 21px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+.experience-card{
+    width: 586px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 30px;
+}
+.experience-card h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.experience-card p{
+    color: #727272;
+}
+
+.experience-img {
+    position: relative;
+}
+.experience-year{
+    position: absolute;
+    bottom: -47px;
+    left: -52px;
+    background-color: #FF900E;
+    color: white;
+    padding: 28px 30px;
+    border-radius: 8px;
+}
+.experience-year h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+.experience-year p{
+    font-size: 18px;
+    font-weight: 500;
+}
+/* some fact section added */
+
+.some-facts{
+    padding: 0px 80px;
+}
+.facts-img{
     display: flex;
     justify-content: center;
+    gap: 124px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+
+    
+}
+.fact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff900e;
+    padding: 45px 40px 60px 40px;
+    border-radius: 8px;
+}
+.fact-card h2{
+    font-size: 46px;
+}
+.para h1{
+    margin-bottom: 24px;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+.para p{
+    font-size: 16px;
+    color: #727272;
+    width: 542px;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
