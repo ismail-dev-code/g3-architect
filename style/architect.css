@@ -94,99 +94,96 @@ header h3 {
 }
 
 /* experience section style  */
-.experience-container{
-    display: flex;
-    gap: 64px;
-    align-items: center;
-    margin-top: 130px;
-    margin-bottom: 130px;
-    padding: 0px 80px;
+.experience-container {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  padding: 0px 80px;
 }
-.experience-content h1{
-    font-size: 46px;
-    font-weight: bold;
-    border-left: 5px solid #ff900e;
-    width: 468px;
-    padding-left: 21px;
+.experience-content h1 {
+  font-size: 46px;
+  font-weight: bold;
+  border-left: 5px solid #ff900e;
+  width: 468px;
+  padding-left: 21px;
 }
-.experience-content p{
-    margin-top: 21px;
-    color: #727272;
-    margin-bottom: 30px;
+.experience-content p {
+  margin-top: 21px;
+  color: #727272;
+  margin-bottom: 30px;
 }
-.experience-card{
-    width: 586px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-    margin-bottom: 20px;
-    border-radius: 8px;
-    padding: 30px;
+.experience-card {
+  width: 586px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 30px;
 }
-.experience-card h4{
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 10px;
+.experience-card h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.experience-card p{
-    color: #727272;
+.experience-card p {
+  color: #727272;
 }
 
 .experience-img {
-    position: relative;
+  position: relative;
 }
-.experience-year{
-    position: absolute;
-    bottom: -47px;
-    left: -52px;
-    background-color: #FF900E;
-    color: white;
-    padding: 28px 30px;
-    border-radius: 8px;
+.experience-year {
+  position: absolute;
+  bottom: -47px;
+  left: -52px;
+  background-color: #ff900e;
+  color: white;
+  padding: 28px 30px;
+  border-radius: 8px;
 }
-.experience-year h1{
-    font-size: 45px;
-    font-weight: 600;
-    text-align: center;
+.experience-year h1 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
 }
-.experience-year p{
-    font-size: 18px;
-    font-weight: 500;
+.experience-year p {
+  font-size: 18px;
+  font-weight: 500;
 }
 /* some fact section added */
 
-.some-facts{
-    padding: 0px 80px;
+.some-facts {
+  padding: 0px 80px;
 }
-.facts-img{
-    display: flex;
-    justify-content: center;
-    gap: 124px;
-    margin-top: 100px;
-    margin-bottom: 180px;
-
-    
+.facts-img {
+  display: flex;
+  justify-content: center;
+  gap: 124px;
+  margin-top: 100px;
+  margin-bottom: 180px;
 }
-.fact-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ff900e;
-    padding: 45px 40px 60px 40px;
-    border-radius: 8px;
+.fact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff900e;
+  padding: 45px 40px 60px 40px;
+  border-radius: 8px;
 }
-.fact-card h2{
-    font-size: 46px;
+.fact-card h2 {
+  font-size: 46px;
 }
-.para h1{
-    margin-bottom: 24px;
-    font-size: 45px;
-    font-weight: bold;
-
+.para h1 {
+  margin-bottom: 24px;
+  font-size: 45px;
+  font-weight: bold;
 }
-.para p{
-    font-size: 16px;
-    color: #727272;
-    width: 542px;
+.para p {
+  font-size: 16px;
+  color: #727272;
+  width: 542px;
 }
 
 @media screen and (max-width: 576px) {
@@ -204,4 +201,41 @@ header h3 {
   nav {
     flex-direction: column;
   }
+}
+.sponsors {
+  display: block;
+  align-items: center;
+}
+.sponsors-title {
+  width: 542px;
+  margin: 0 auto;
+}
+.sponsors-title h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.sponsors-title p {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.sponsors-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.copyright {
+  background-color: #fff4e7;
+
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  padding-top: 37px;
+  padding-bottom: 36px;
+  border-radius: 10px;
 }
